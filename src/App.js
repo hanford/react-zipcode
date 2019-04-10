@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Zip onValue={(value) => console.log(`such value ${value}`)}/>
+        <Zip placeholder="Zip Code" onValue={(value) => console.log(`such value ${value}`)}/>
       </div>
     )
   }
