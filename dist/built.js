@@ -28,7 +28,7 @@ var ZipCode = function (_Component) {
   function ZipCode() {
     _classCallCheck(this, ZipCode);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ZipCode).call(this));
+    var _this = _possibleConstructorReturn(this, (ZipCode.__proto__ || Object.getPrototypeOf(ZipCode)).call(this));
 
     _this.state = {
       code: ''
@@ -58,7 +58,7 @@ var ZipCode = function (_Component) {
       var code = this.state.code;
 
 
-      return _react2.default.createElement('input', { type: 'text', pattern: '[0-9]*', value: code, onChange: this.format });
+      return _react2.default.createElement('input', { type: 'text', pattern: '[0-9]*', placeholder: this.props.placeholder ? this.props.placeholder : '', value: code, onChange: this.format });
     }
   }]);
 

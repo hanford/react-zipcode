@@ -28,7 +28,7 @@ export default class ZipCode extends Component {
     const { code } = this.state
 
     return (
-      <input type='text' pattern='[0-9]*' value={code} onChange={this.format} />
+      <input type='text' pattern='[0-9]*' placeholder={this.props.placeholder ? this.props.placeholder : ''} value={code} onChange={this.format} />
     )
   }
 }
